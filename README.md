@@ -1,2 +1,2 @@
-# docker-armjdk8
+# docker-arm32jdk8
 docker auto building
