@@ -10,7 +10,7 @@ MAINTAINER xiongping <xpalive@aliyun.com>
 #ENV LANG=UTF-8
 ENV JAVA_HOME /opt
 ENV JAVA_VERSION=jdk-8u271-linux-arm32-vfp-hflt
-ENV WGET_URL=https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5aaa0b1d2d801acb16/jdk-8u271-linux-arm32-vfp-hflt.tar.gz?AuthParam=1605539721_52aa9da02146b2e582b6ad9c2d9faa51
+ENV WGET_URL=https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5aaa0b1d2d801acb16/jdk-8u271-linux-arm32-vfp-hflt.tar.gz?AuthParam=1605540279_2a38a054218cc5af911800190a61cccb
 
 
 
@@ -18,7 +18,7 @@ ENV WGET_URL=https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5a
 
 #wget -O ${JAVA_HOME}/${JAVA_VERSION}.tar.gz --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5aaa0b1d2d801acb16/${JAVA_VERSION}.tar.gz?AuthParam=1605512995_b2267023c4d48ac632e7037fdbfac81a && \
 #COPY ${JAVA_VERSION}.tar.gz ${JAVA_HOME}
-RUN wget -O ${JAVA_HOME}/${JAVA_VERSION}.tar.gz ${WGET_URL}
+RUN wget -O ${JAVA_HOME}/${JAVA_VERSION}.tar.gz ${WGET_URL} && \
     tar -xzf ${JAVA_HOME}/${JAVA_VERSION}.tar.gz -C ${JAVA_HOME} && \
     rm ${JAVA_HOME}/${JAVA_VERSION}.tar.gz && \
     echo "export JAVA_HOME=${JAVA_HOME}/jdk1.8.0_271" >> /etc/profile && \
