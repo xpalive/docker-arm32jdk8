@@ -10,7 +10,7 @@ MAINTAINER xiongping <xpalive@aliyun.com>
 #ENV LANG=UTF-8
 ENV JAVA_HOME /opt
 ENV JAVA_VERSION=jdk-8u271-linux-arm32-vfp-hflt
-ENV WGET_URL=https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5aaa0b1d2d801acb16/jdk-8u271-linux-arm32-vfp-hflt.tar.gz?AuthParam=1605538812_54180c10e16f465e1e3a8922ec9f7d1b
+ENV WGET_URL=https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5aaa0b1d2d801acb16/jdk-8u271-linux-arm32-vfp-hflt.tar.gz?AuthParam=1605539721_52aa9da02146b2e582b6ad9c2d9faa51
 
 
 
