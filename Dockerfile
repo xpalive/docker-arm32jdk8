@@ -19,7 +19,6 @@ RUN wget -O ${JAVA_HOME}/${JAVA_VERSION}.tar.gz ${WGET_URL} && \
     rm ${JAVA_HOME}/${JAVA_VERSION}.tar.gz && \
     rm ${JAVA_HOME}${JAVA_DIR_BASE}/src.zip && \
     echo "export JAVA_HOME=${JAVA_HOME}${JAVA_DIR_BASE}" >> /etc/profile && \
-    echo "export PATH=$PATH:${JAVA_HOME}${JAVA_DIR_BASE}/bin" >> /etc/profile && \
-    source /etc/profile
+    echo "export PATH=$PATH:${JAVA_HOME}${JAVA_DIR_BASE}/bin" >> /etc/profile
     
     
