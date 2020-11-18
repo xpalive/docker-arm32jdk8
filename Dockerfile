@@ -17,8 +17,8 @@ ENV JAVA_DIR_BASE=/jdk1.8.0_271
 RUN wget -O ${JAVA_HOME}/${JAVA_VERSION}.tar.gz ${WGET_URL} && \
     tar -xzf ${JAVA_HOME}/${JAVA_VERSION}.tar.gz -C ${JAVA_HOME} && \
     rm ${JAVA_HOME}/${JAVA_VERSION}.tar.gz && \
-    rm ${JAVA_HOME}${JAVA_DIR_BASE}/src.zip && \
-    echo "export JAVA_HOME=${JAVA_HOME}${JAVA_DIR_BASE}" >> /etc/profile && \
-    echo "export PATH=$PATH:${JAVA_HOME}${JAVA_DIR_BASE}/bin" >> /etc/profile
+#    rm ${JAVA_HOME}${JAVA_DIR_BASE}/src.zip
+#    echo "export JAVA_HOME=${JAVA_HOME}${JAVA_DIR_BASE}" >> /etc/profile && \
+#    echo "export PATH=$PATH:${JAVA_HOME}${JAVA_DIR_BASE}/bin" >> /etc/profile
     
     
